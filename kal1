@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    char operacja;
+    int num1, num2;
+
+   
+    while (cin >> operacja >> num1 >> num2) {
+        int wynik;
+
+        
+        switch (operacja) {
+            case '+':
+                wynik = num1 + num2;
+                break;
+            case '-':
+                wynik = num1 - num2;
+                break;
+            case '*':
+                wynik = num1 * num2;
+                break;
+            case '/':
+                wynik = num1 / num2;
+                break;
+            case '%':
+                wynik = num1 % num2;
+                break;
+        }
+
+        cout << wynik << endl;
+    }
+
+    return 0;
+}
